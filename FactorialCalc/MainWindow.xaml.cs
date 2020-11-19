@@ -56,15 +56,16 @@ namespace FactorialCalc
         public void Permutations()
         {
             //TODO: Write Formulate to out put the permutation of 2 numbers. Be sure to utilize the code from the Factorial() above to help you solve the problem. 
-            int N;
-            int n = 1;
-            int R;
-            int r = 1;
-            int perm;
-            int nr = 1;
-
+            Double N;
+            Double n = 1;
+            Double R;
+            Double r = 1;
+            Double perm;
+            Double nr = 1;
+            
             N = Convert.ToInt32(xNObjects.Text);
             R = Convert.ToInt32(xRSample.Text);
+            Double NR = N - R;
 
             for (int x = 1; x <= N; x++)
             {
@@ -76,7 +77,7 @@ namespace FactorialCalc
                 r = r * x;
             }
 
-            for (int x = 1; x <= (N - R); x++)
+            for (int x = 1; x <= NR; x++)
             {
                 nr = nr * x;
             }
@@ -90,12 +91,12 @@ namespace FactorialCalc
         public void Combinations()
         {
             //TODO: Write Formulate to out put the combination of 2 numbers. Be sure to utilize the code from the Factorial() above to help you solve the problem.\
-            int N;
-            int n = 1;
-            int R;
-            int r = 1;
-            int perm;
-            int nr = 1;
+            Double N;
+            Double n = 1;
+            Double R;
+            Double r = 1;
+            Double perm;
+            Double nr = 1;
 
             N = Convert.ToInt32(xNObjects.Text);
             R = Convert.ToInt32(xRSample.Text);
